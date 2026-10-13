@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+          content="Gruppentabelle der Weltmeisterschaft (WM) 2026 mit allen Teams,Punkte,Siege,Tore und Form">
+    <title>Weltmeisterschaft (VM) 2026, </title>
+    <meta name="keywords" content="WM 2026, WM-Trikot, WM-Tor, beste WM-Mannschaft, WM-Spielplan ">
+     <meta name="author" content="Lea, Joseph, Brel">
+    <meta property="og:title" content="Weltmeisterschaft 2026 |Tabellenübersicht, Shop, Siege, Form" >
+    <meta property="og:description" content="Gruppentabelle der Weltmeisterschaft (WM) 2026 mit allen Teams,Punkte,Siege,Tore und Form">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="./image/zu_teilen.webp">
+    <link rel="stylesheet" href="gruppe-style.css">
+    <link rel="icon" type="image/png" href="image/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bestellung-grid">
+    <header>
+         <a class="head">FIFA WORLD CUP 2026</a>
+        <nav>
+            <a href="index.html">STARTSEITE</a>
+            <a href="Spielplan.html">SPIELE</a>
+            <a href="Quiz.html">GESCHICHTE/QUIZ</a>
+            <a href="gruppe.html">GRUPPEN</a>
+        </nav>
+    </header>
+    <main>
+
+    <section class="bestellung">
+
+        <h1 class="page-title">Trikot bestellen</h1>
+
+        <form action="bestellung.php" method="post" class="bestellformular">
+
+            <h2>Persönliche Daten</h2>
+
+            <label for="vorname">Vorname</label>
+            <input type="text" id="vorname" name="vorname" required>
+
+            <label for="nachname">Nachname</label>
+            <input type="text" id="nachname" name="nachname" required>
+
+            <label for="strasse">Straße</label>
+            <input type="text" id="strasse" name="strasse" required>
+
+            <label for="hausnummer">Hausnummer</label>
+            <input type="text" id="hausnummer" name="hausnummer" required>
+
+            <label for="plz">Postleitzahl</label>
+            <input type="text" id="plz" name="plz" maxlength="5" required>
+
+            <label for="stadt">Stadt</label>
+            <input type="text" id="stadt" name="stadt" required>
+
+            <label for="telefon">Telefonnummer</label>
+            <input type="tel" id="telefon" name="telefon" required>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <h3>Bestellung</h3>
+
+            <label for="artikel">Artikel auswählen</label>
+            <select id="artikel" name="artikel" required>
+                <option value="">Bitte auswählen</option>
+                <option>Deutschland-Heimtrikot</option>
+                <option>Brasilien-Heimtrikot</option>
+                <option>Argentinien-Heimtrikot</option>
+                <option>Kroatien-Heimtrikot</option>
+                <option>Mexiko-Heimtrikot</option>
+                <option>Italien-Heimtrikot</option>
+                <option>Portugal-Heimtrikot</option>
+                <option>Spanien-Heimtrikot</option>
+            </select>
+
+            <label for="groesse">Größe</label>
+            <select id="groesse" name="groesse" required>
+                <option value="">Bitte auswählen</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <label for="lieferung">Gewünschtes Lieferdatum</label>
+            <input type="date" id="lieferung" name="lieferung">
+            <h3>Zahlungsmethode</h3>
+            <div class="zahlungsmethode">
+                <input type="radio" id="paypal" name="zahlung" value="paypal" required>
+                <label for="paypal">PayPal</label>
+                <input type="radio" id="applepay" name="zahlung" value="applepay">
+                <label for="applepay">Apple Pay</label>
+
+                <input type="radio" id="googlepay" name="zahlung" value="googlepay">
+                <label for="googlepay">Google Pay</label>
+            </div>   
+            <span id="agb-pos">
+                <input type="checkbox" id="agb" required>
+                <label for="agb" > Ich akzeptiere die AGB.</label>
+            </span>    
+            <button type="submit">Jetzt bestellen</button>
+
+        </form>
+
+    </section>
+   </main> 
+   <footer>
+           <div class="footer-container">
+            <h2> FIFA World Cup 2026</h2>
+            <div class="footer-info">
+                <span>🌍 Kanada | USA | Mexiko</span>
+            </div>
+            <p class="Copyright">
+                2026 VM-Projekt | Erstellt von Brel, Joseph und Lea
+            </p>
+        </div>
+
+   </footer>
+    </div>
+</body>    
+</html>

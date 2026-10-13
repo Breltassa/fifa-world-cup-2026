@@ -1,0 +1,1644 @@
+*{
+    box-sizing:border-box;/*CHATGPT*/
+}
+    
+.Main-Grid-Container{
+    display: grid;
+     grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+body{
+    background: linear-gradient(
+        135deg,
+        #161032 0%,
+        #2E1F73 50%,
+        #4A2FA0 100%
+    );
+    color:white;
+}
+header{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items:center;
+    background:rgba(22,16,50,1);
+    padding:8px;
+}
+header > a{
+    text-decoration: none;
+}
+.head{
+    color: white; 
+    padding:8px;
+    font-size: 20px;
+}
+.head::before{
+    content:"🏆";
+}
+nav{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+nav a{
+     
+    color: white;
+    font-size: 16px;
+    text-decoration:none;
+}
+nav a:hover{
+    color:cyan;
+}
+.Brel{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top:30px;
+    padding:2.5px ;
+    /* Flex-wrap: wrap;*/
+}
+.img1{
+    width:250px;
+    height:  250px;
+    object-fit: cover;
+    border-radius:15px;
+}
+.Titre{
+
+    color: #F8FAFC ;
+    font-size: 32px;
+}
+.Beschreibung-1{
+    color: #CBD5E1;
+    font-size:18px;
+}
+#champion{
+    text-align: center;
+    font-size: 20px;
+    color: #CBD5E1;
+    margin-top: 100px;
+}
+#champion::after{
+    content:"🏆";
+}
+.Grid-container3{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+.team-img{
+    width:100%;
+    height:150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.fav-card{
+    background-color: #1A2747;
+    padding: 15px;
+    border: 2px solid #EAB308;
+    border-radius: 15px;
+    width:280px;
+    height: 230px;
+    margin:auto;
+    text-align: center;
+    transition: 0.3s;
+}
+.fav-card:hover{
+    transform: translateY(-8px)  scale(1.03);
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+}
+.fav-card p{
+    color: #CBD5E1;
+}
+.country{
+    margin-top: 10px;
+    font-size: 20px ;
+    color: white;
+}
+.Flex-box1{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.Titel{
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+}
+.date1{
+    font-size: 24px;
+    color:#22C55E ;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.info{
+    color: #CBD5E1;
+    text-align: center;
+    background-color: #1A2747;
+    padding: 15px;
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    width: 170px;
+    height:170px;
+}
+#highlights{
+    text-align: center;
+    font-size: 40px ;
+    color: #CBD5E1;
+}
+#highlights::before{
+    content:"🎥";
+}
+.Flex-box2{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.Flex-box2 div{
+    display: flex;
+    justify-content: center;
+}
+video{
+    width: 60%;
+    border-radius: 10%;
+    height: auto;
+     border: 2px solid #EAB308;
+}
+.Übergang{
+    font-size: 20px;
+    color: #CBD5E1;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.Überblick{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    
+}
+.Overview{
+    width: 180px;
+    height: 320px;
+     border: 2px solid #EAB308;
+    background: rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+
+    transition: .35s;
+}
+.Overview:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.5);
+}
+.Overview h3{
+
+    color:white;
+
+    margin:10px;
+
+    font-size:30px;
+}
+.Overview a{
+
+    display:inline-block;
+
+    margin:0 10px 10px;
+
+    text-decoration:none;
+
+    color:#FFD700;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+.Overview a:hover{
+
+    color:white;
+}
+.card-img{
+    width: 100%;
+    height:105px;
+    object-fit: cover;
+    display:block;
+}
+
+/*Spielplan.css*/
+
+.Hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+    margin-top:20px;
+    text-align:center;
+}
+.Hero img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    border-radius:15px;
+}
+.Hero div{
+    padding: 50px 0;
+}
+.Plan{
+    color: #F8FAFC ;
+    font-size: 32px;
+    padding-right: 20px;
+}
+.Beschreibung{
+    color: #CBD5E1;
+    font-size:20px;
+    margin-top: 20px;
+}
+.host{
+    color: #FACC15;
+    font-size:18px;
+    margin-top: 20px;
+}
+.date{
+    font-size: 24px;
+    color:#22C55E;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.final{
+    font-size:24px ;
+    color:#F97316 ;
+    font-weight: bold;
+}
+.match{
+    font-size:24px;
+    color:#38BDF8 ;
+    font-weight: bold;
+}
+.date::before{
+    content:"📆" ;
+}
+.final::before{
+    content: "🏆";
+}
+.match::before{
+    content:"🎯" ;
+}
+#Schedule-title{
+    text-align: center;
+    font-size: 32px ;
+    color: #CBD5E1;
+}
+#Schedule-title::before{
+    content:"🥇";
+}
+.Grid-container1{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-auto-rows: ;*/
+    gap: 15px;
+    padding: 0 20px;
+    
+}
+.card{
+    padding:20px ;
+    background-color:#1A2747 ;
+    color:#CBD5E1 ;
+    text-align: center;
+    border-radius: 15px;
+    Border: 2px solid #EAB308;
+    transition: 0.3s;
+    
+}
+.Group{
+    font-size: 28px;
+}
+.card:hover{
+    background-color: #2563EB;
+     transform: translateY(-5px)  scale(1.03);
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+}
+
+.phase-info{
+    background-color:#1A2747;
+    border:2px solid #EAB308;
+    border-radius:15px;
+    padding:20px;
+    margin:25px auto;
+    color:white;
+    min-height:120px;
+    width: 300px;
+    box-shadow:0 0 15px rgba(234,179,8,0.3);
+    display: block;
+    
+}
+
+.phase-info h3{
+    color:#EAB308;
+    margin-bottom:10px;
+}
+
+.schedule-button a{
+    background-color: #EAB308;
+    color: #0A1B4D;
+    padding: 15px 30px;
+    border-radius:10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    
+}
+schedule-button{
+      text-align: center;
+       margin: 40px 0;
+}
+.schedule-button a:hover{
+    background-color: white;
+    color: #0A1B4D;
+}
+.text1{
+    font-size: 28px;
+    margin-top: 50px;
+    color: #CBD5E1;
+    text-align: center;
+}
+.video{
+    text-align: center;
+}
+.video video{
+    width:250px ;
+    border-radius: 15px;
+    height: auto;
+}
+.text2{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: #FACC15;
+    font-weight: bold;
+    text-align: center;
+}
+.text2::after
+{
+    content: "🏟️";
+}
+#host-cities-title{
+    text-align: center;
+    font-size: 32px ;
+    color: #CBD5E1;
+}
+#host-cities-title::before{
+    content:"🏙️";
+}
+.Stadium-infos{
+     color: #CBD5E1;
+     font-size: 20px;
+     padding-bottom: 20px;
+}
+.Grid-container2{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+.stadium-img{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+.stadium-card{
+    background-color: #1A2747;
+    padding: 15px;
+    border: 2px solid #EAB308;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.stadium-card:hover{
+    transform: translateY(-5px)  scale(1.03);
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.4);
+}
+.stadium-card p{
+    color: #CBD5E1;
+    font-size: 18px;
+}
+.city{
+    margin-top: 15px;
+    font-size: 28px ;
+    color: white;
+}
+#quiz-form{
+     background-color: #1A2747;
+    border: 2px solid #EAB308;
+    width: 250px;
+    border-radius: 15px;
+}
+.front{
+    display:block;
+}
+
+.back{
+    display:none;
+    color:white;
+    padding: 10px;
+}
+
+.back h3{
+    color:#EAB308;
+}
+
+.stadium-card.active .front{
+    display:none;
+}
+
+.stadium-card.active .back{
+    display:block;
+}
+.question{
+    color: #CBD5E1;
+    font-size:20px;
+}
+.Response{
+    font-size: 18px;
+    color:#CBD5E1;
+}
+.correct{
+    color: #22c55e;
+    background-color: rgba(34,197,94,0.15);
+    border: 2px solid #22c55e;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    display:inline-block;
+}
+
+.wrong{
+    color: #ef4444;
+    background-color: rgba(239,68,68,0.15);
+    border: 2px solid #ef4444;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/*Beste Spieler*/
+
+.Best{
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+.spieler-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+    width:90%;
+
+    margin:30px auto;
+}
+.Flex-best{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+    background:rgba(25, 18, 50, 0.92);
+
+    border: 2px solid #EAB308;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    padding:20px;
+
+    align-items:center;
+}
+.Flex-best img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+.Flex-best img.flagge{
+    width: 30px;
+    height: auto;
+}
+.Flex-best div:first-of-type{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    line-height:1.8;
+}
+.Flex-best div:last-of-type{
+
+    margin-top:20px;
+
+    color:#ddd;
+
+    line-height:1.6;
+}
+
+/*Gruppen*/
+*{
+    font-family:roboto;
+}
+
+.gruppe-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.gruppe-items{
+    background-color:black;
+    border-radius:18px;
+    padding:20px;
+    overflow-x:auto;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.page-titel,
+.legende h2,
+.shop-titel,
+.top-stuermer-title{
+font-size: 30px;
+font-family: poppins;
+}
+
+.gruppe-tabelle{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.gruppe-tabelle th{
+    background:midnightblue;
+    color:white;
+    padding:12px;
+    width: 100%;
+}
+
+.gruppe-tabelle td{
+    padding:10px;
+    border-bottom:1px solid #ececec;
+}
+/*Hilfe von Chat*/
+.gruppe-tabelle td:first-child{
+    white-space: nowrap;
+}
+.gruppe-tabelle td:last-child{
+    white-space: nowrap;
+}
+.gruppe-tabelle th,
+.gruppe-tabelle td{
+    text-align:center;
+    vertical-align:middle;
+}
+.gruppe-tabelle td:first-child,
+.gruppe-tabelle th:first-child{
+    text-align:left;
+}
+.gruppe-items{
+    transition:.3s;
+}
+
+.gruppe-items:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+.legende-item{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    font-size: 20px;
+}
+aside{
+    margin-top:50px;
+}
+
+.shop{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding: 10px;
+    margin: 60px;
+}
+.kaufen-link{
+    display:inline-block;
+    margin-top:20px;
+    padding:30px;
+    background:midnightblue;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.kaufen-link:hover{
+    background:#3449c7;
+}
+.trikot-image{
+    width:20%;
+    height: auto;
+}
+
+.trikot{
+    background: rgba(22,16,50,1);;
+    border-radius:18px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.trikot:hover{
+    transform:scale(1.04);
+}
+
+.trikot img{
+    width:40%;
+}
+.top-stuermer{
+    margin-top:40px;
+}
+
+.spieler-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.spieler-bild{
+    background: rgba(22,16,50,1);
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+    overflow:hidden;
+}
+.spieler-bild h5{
+    font-size: 20px;
+}
+
+.spieler-image{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:12px;
+}
+
+.spieler-info{
+    opacity:0;
+    max-height:0;
+    transition:.4s;
+}
+
+.spieler-bild:hover .spieler-info{
+    opacity:1;
+    max-height:250px;
+}
+
+.spieler-card:hover{
+    transform:translateY(-6px);
+}
+.land-trikot,
+.trikot p ,
+.spieler-image h5,
+.spieler-info p{
+    font-size: 20px;
+    color:aqua;
+ 
+}
+/*Besstellung*/
+
+.bestellung{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    margin: 30px auto;
+    font-size: 15px;
+}
+.page-title{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: midnightblue;
+    margin-bottom: 25px;
+}
+.bestellformular{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.bestellformular option{
+    font-size:16px;
+}
+.bestellformular h3{
+    margin-top: 20px;
+    color: midnightblue;
+    font-family: "Poppins";
+    border-bottom: 6px solid #d9d9d9;
+    padding-bottom: 8px;
+}
+
+.bestellformular input,
+.bestellformular select,
+.bestellformular textarea{
+    width:auto;
+    padding: 12px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button{
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: midnightblue;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover{
+    background: #2d4ad3;
+}
+#agb-pos{
+    padding-top: 20px;
+}
+.bestellung-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    min-height:100vh;
+}
+/*QUIZ*/
+.inf-main h3{
+    color: yellowgreen;
+}
+.inf-main{
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    background-color: red;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a{
+    color: green;
+    display: inline-block;
+}
+
+.menu a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+.inf-Hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:10px
+    }
+    .inf-Hero img{
+        width: 300px;
+        height: auto;
+    object-fit: contain;
+    border-radius:15px;
+    }
+    .inf-Hero p{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+.inf-img{
+    width: 90%;
+    height: auto;
+    border: 20px solid black;
+    border-radius:20px;
+   object-fit: cover;
+   display: block;
+   margin: 0;
+   box-shadow: 20px 20px 15px red;
+   transition: 0.9s;
+}
+
+.inf-img:hover{
+    transform: scale(1.1);
+}
+.inf-h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 100px;
+}
+
+.inf-p1{
+    text-align: center;
+    margin: 20px auto 10px;
+    font-size: 20px;
+    color: #CBD5E1;
+}
+.inf-p{
+    font-weight: normal;
+}
+
+.inf-a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inf-a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.inf-bilder{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inf-bilder img{
+    flex-grow: 1;
+}
+
+.inf-section{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#inf-quiz label{
+    display: block;
+    margin: 30px 10px;
+    font-size: 18px;    
+    cursor: pointer;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#inf-quiz input{
+    margin-right: 20px;
+}
+
+#inf-quiz label:hover{
+    color: blue;
+}
+
+.inf-button{
+    background-color: white;
+    color: orange;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#inf-quiz button:hover{
+    background-color: yellow;
+}
+
+#inf-quiz{
+    background-color:  rgba(22,16,50,1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#ergebnis{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+#korrektur{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#nochmal{
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 30px 15px;
+     background: rgba(22,16,50,1);
+     text-align: center;
+     border-top: 2px solid #FACC15;
+}
+.footer-container h2{
+    color:white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.footer-info{
+    color:#CBD5E1;
+    font-size: 18px;
+}
+.Copyright{
+    margin-top: 14px;
+    color: #94A3B8;
+}
+
+
+@media(min-width:768px){
+
+    .Brel{
+        flex-direction:row;
+        text-align:left;
+        align-items:center;
+    }
+
+    .Grid-container3{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .Flex-box1{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .info{
+        width:300px;
+        height:150px;
+    }
+
+    .Flex-box2{
+        gap:30px;
+        justify-content: center;
+    }
+    video{
+        width:350px;
+    }
+
+    /*Spielplan.css*/
+    nav{
+        flex-direction:row;
+        gap:25px;
+    }
+
+     .Hero h2{
+        font-size:42px;
+    }
+
+    .Beschreibung{
+        font-size:24px;
+    }
+
+    .video video{
+
+        width:80%;
+
+    }
+    .text1{
+
+        font-size:36px;
+
+    }
+
+    .text2{
+
+        font-size:32px;
+
+    }
+
+    /*Beste Spieler*/
+
+.spieler-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+    width:750px;
+
+    margin:60px auto;
+}
+
+.Flex-best{
+
+    display:grid;
+
+    grid-template-columns:180px 1fr;
+
+    gap:5px;
+
+    padding:25px;
+}
+
+.Flex-best img{
+
+    width:180px;
+
+    height:320px;
+}
+
+
+    /*Gruppen*/
+
+     .gruppe-container{
+        grid-template-columns:1fr ;
+    } 
+    .shop{
+        grid-template-columns:repeat(3,1fr);
+    }
+    .spieler-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /*Quiz*/
+
+    .inf-main{
+        padding: 50px 100px;
+    }
+    .menu{
+        margin-left: auto;
+        flex-direction: row;
+        gap: 40px;
+        font-size: 30px;
+    }
+
+    .inf-bilder{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+    }
+    .inf-Hero{
+        gap:15px;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .inf-Hero img{
+    max-width: 470px;
+    width: 100%;
+    height:auto;
+    padding-right: 10px;
+    }
+    .inf-Hero p{
+        font-size: 30px;
+        padding: 90px 10px;
+    }
+    .inf-h2{
+    margin-top: 60px;
+}
+
+    .inf-img{
+        width: 300px;
+        height: 200px;
+        margin: 20px 0;
+    }
+
+    .inf-section section, #inf-quiz{
+        margin: 15px;
+        padding: 15px;
+    }
+
+}
+@media (min-width:1024px)  {
+    /*Gruppe*/
+    .gruppe-container{
+    grid-template-columns:repeat(2, 1fr) ;
+    } 
+    .shop{
+        grid-template-columns:repeat(4,1fr);
+    }
+    /*Bestellung*/
+    .bestellung-grid{
+    grid-template-columns:1fr;
+}
+.bestellung{
+    font-size: 20px;
+}
+}
+
+@media(min-width:1357px){
+
+    header{
+
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.head{
+    padding:20px;
+    font-size: 3em;
+}
+.head::before{
+    content:"🏆";
+}
+nav{
+    flex-direction: row;
+    gap:30px;
+}
+a{
+    font-size: 1.5em;
+}
+a:hover{
+    color:cyan;
+}
+.Brel{
+    gap: 50px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    margin-top:60px;
+}
+.img1{
+    width:350px;
+    height:350px;
+    object-fit: cover;
+    border-radius:15px;
+}
+.Titre{
+
+    font-size: 40px;
+}
+.Beschreibung-1{
+    font-size:1.5rem;
+}
+#champion{
+    text-align: center;
+    font-size: 4em ;
+    margin-top: 200px;
+}
+#champion::after{
+    content:"🏆";
+}
+.Grid-container3{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.team-img{
+    width:100%;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.fav-card{
+    padding: 15px;
+    border-radius: 15px;
+    height: 260px;
+}
+.country{
+    margin-top: 15px;
+    font-size: 30px ;
+}
+.Flex-box1{
+    gap: 50px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.Titel{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.info{
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    height:160px;
+}
+#highlights{
+    text-align: center;
+    font-size: 70px ;
+}
+.Flex-box2{
+    gap: 30px;
+    justify-content: center;
+
+}
+video{
+     width:800px ;
+    border-radius: 10%;
+    height: 500px;
+    object-fit: cover;
+}
+.Übergang{
+    font-size: 40px;
+    color: #CBD5E1;
+    text-align: left;
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+.Überblick{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    max-width: none;
+    margin: 30px auto;
+    
+}
+.Overview{
+    width: 400px;
+    min-height: 350px;
+     border: 2px solid #EAB308;
+    background: rgba(255,255,255,.08);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+
+    transition: .35s;
+}
+.Overview:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 35px rgba(0,0,0,.5);
+}
+.Overview h3{
+
+    color:white;
+
+    margin:20px;
+
+    font-size:1.4rem;
+}
+.Overview a{
+
+    display:inline-block;
+
+    margin:0 20px 20px;
+
+    text-decoration:none;
+
+    color:#FFD700;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+.Overview a:hover{
+
+    color:white;
+}
+.card-img{
+    width: 100%;
+    height:220px;
+    object-fit: cover;
+    display:block;
+}
+
+/*Spielplan.css*/
+
+.Hero{
+    flex-direction: row;
+    align-items: center;
+    margin-top:60px;
+}
+.Hero img{
+    width:1300px;
+    height:700px;
+    object-fit: contain;
+    border-radius:15px;
+}
+.Hero div{
+    padding: 100px 0;
+}
+.Plan{
+    font-size: 2em;
+    padding-right: 40px;
+}
+.Beschreibung{
+    font-size:1.5rem;
+    margin-top: 60px;
+}
+.host{
+    font-size:1.2rem;
+    margin-top: 20px;
+}
+.date{
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+.final{
+    font-size:1.8rem;
+    margin-top: 15px;
+}
+.match{
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+.date::before{
+    content:"📆" ;
+}
+.final::before{
+    content: "🏆";
+}
+.match::before{
+    content:"🎯" ;
+}
+#Schedule-title{
+    text-align: center;
+    font-size: 32px ;
+}
+#Schedule-title::before{
+    content:"🥇";
+}
+.Grid-container1{
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 1fr 2fr 1fr ;
+    gap: 1em;
+    
+}
+.card{
+    padding:3em ;
+    border-radius: 15px;
+    font-size:1em;
+    transition: 0.3s;
+}
+.Group{
+    font-size: 2em;
+}
+.phase-info{
+    border-radius:15px;
+    padding:20px;
+    margin:25px auto;
+    min-height:120px;
+    width: 600px;
+    
+}
+.phase-info h3{
+    margin-bottom:10px;
+}
+
+.schedule-button a{
+    padding: 15px 30px;
+    border-radius:10px;
+    font-size: 1.2rem;
+}
+schedule-button{
+       margin: 40px 0;
+}
+.text1{
+    font-size: 3em;
+    margin-top: 100px;
+}
+.video video{
+    width:600px;
+    border-radius: 10%;
+    height: auto;
+}
+.text2{
+    font-size: 2.5em;
+    margin-top: 75px;
+    margin-bottom: 130px;
+}
+.text2::after
+{
+    content: "🏟️";
+}
+#host-cities-title{
+    font-size: 4em ;
+}
+#host-cities-title::before{
+    content:"🏙️";
+}
+.Stadium-infos{
+     font-size: 35px;
+     padding-bottom: 20px;
+}
+.Grid-container2{
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.stadium-img{
+    width:100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.stadium-card{
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.city{
+    margin-top: 15px;
+    font-size: 2em ;
+}
+.question{
+    font-size:40px;
+}
+#quiz-form{
+    width: 500px;
+}
+.Response{
+    font-size: 30px;
+}
+.correct{
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.wrong{
+    border: 2px solid #ef4444;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+} 
+/*Beste Spieler*/
+.Best{
+    font-size: 40px;
+}
+.spieler-grid{
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    width:90%;
+
+    margin:60px auto;
+}
+.Flex-best{
+
+    grid-template-columns:250px 1fr;
+
+    gap:25px;
+
+    padding:25px;
+}
+.Flex-best img{
+
+    width:250px;
+
+    height:320px;
+
+    border-radius:15px;
+}
+.Flex-best img.flagge{
+    width: 30px;
+    height: auto;
+}
+.Flex-best div:first-of-type{
+
+    font-size:1.3rem;
+
+}
+
+/*Gruppen*/
+
+     .gruppe-container{
+    grid-template-columns:repeat(3, 1fr) ;
+    } 
+    .shop{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .spieler-container{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+/*Quiz*/
+ .inf-main{
+        padding: 60px 60px;
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+    .inf-h2{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin-top: 120px;
+}
+
+.inf-p1{
+    text-align: center;
+    margin: 20px auto 40px;
+    font-size: 30px;
+    color: #CBD5E1;
+}
+    .inf-Hero{
+        align-items: center;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .inf-Hero img{
+     width:1000px;
+     max-width: 100%;
+    height:700px;
+    padding-right: 90px;
+    }
+    .inf-Hero p{
+        font-size: 40px;
+        padding: 200px 20px;
+    }
+
+    .inf-section h3{
+       font-size: 2rem;
+    }
+    .inf-section p{
+        font-size: 1.35rem;
+    }
+
+    .inf-img{
+        width: 100%;
+        height: 300px;
+        max-width: 500px;
+        object-fit: cover;
+    }
+
+    .inf-bilder{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .menu{
+        gap: 50px;
+        font-size: 32px;
+    }
+
+
+footer{
+    margin-top: 90px;
+    padding: 50px 20px;
+     border-top: 2px solid #FACC15;
+}
+.footer-container h2{
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+.Copyright{
+    margin-top: 20px;
+}
+
+}
+
+

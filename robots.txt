@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://143.93.245.165/project/taz/sitemap.xml
